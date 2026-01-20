@@ -1,0 +1,47 @@
+.education {
+  padding: 60px 80px;
+  background-color: #f9f9f9;
+}
+
+.education h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.edu-card {
+  background: #fff;
+  padding: 22px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.edu-card h3 {
+  font-size: 20px;
+  color: #1e88e5;
+  margin-bottom: 6px;
+}
+
+.institute {
+  font-weight: 600;
+  color: #333;
+}
+
+.year {
+  font-size: 14px;
+  color: #777;
+  margin: 6px 0;
+}
+
+.desc {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,57 @@
+/* Experience Section */
+.experience {
+  padding: 60px 80px;
+  background-color: #f9f9f9;
+}
+
+.experience h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+  text-align: center;
+}
+
+/* Experience card */
+.exp-card {
+  background: #fff;
+  padding: 22px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exp-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.exp-card h3 {
+  font-size: 20px;
+  color: #1e88e5;
+  margin-bottom: 6px;
+}
+
+.company {
+  font-weight: 600;
+  color: #333;
+}
+
+.year {
+  font-size: 14px;
+  color: #777;
+  margin: 6px 0;
+}
+
+.desc {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience {
+    padding: 40px 20px;
+  }
+}

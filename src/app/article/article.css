@@ -1,0 +1,45 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.article-container h1 {
+  font-size: 32px;
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.article-container h2 {
+  font-size: 22px;
+  color: #333;
+  margin-top: 25px;
+}
+
+.article-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-top: 10px;
+}
+
+.conclusion {
+  font-weight: 600;
+  margin-top: 25px;
+}

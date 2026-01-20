@@ -1,32 +1,33 @@
-
- <header>
+<header>
   <h1>DR. LYNDA ADHAYA</h1>
 
-  <div class="social-icons">
-    <i class="fa-brands fa-facebook-f"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-instagram"></i>
-  </div>
+ <div class="social-icons">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-twitter"></i>
+  <i class="fa-brands fa-linkedin"></i>
+</div>
+
+</header>
+
+<nav>
+  <a routerLink="/about" >About</a>
+  <a routerLink="/specializations">Specializations</a>
+  <a routerLink="/education">Education</a>
+  <a routerLink="/experience">Experience</a>
+  <a routerLink="/gallery">Gallery</a>
+  <a routerLink="/article">Article</a>
 
   <div class="nav-actions">
     <button class="menu-btn">
-      <i class="fa-solid fa-bars"></i>
-      <span>All Menu</span>
+      All Menu <i class="fa-solid fa-bars"></i>
     </button>
-  </div>
-  <button class="primary-btn" (click)="bookAppointment()">
+
+    <button class="primary-btn" (click)="bookAppointment()">
       Book Appointment
     </button>
-</header>
-<nav>
-    <a routerLink="/about">About</a>
-    <a routerLink="/specializations">Specializations</a>
-    <a routerLink="/education">Education</a>
-    <a routerLink="/experience">Experience</a>
-    <a routerLink="/gallery">Gallery</a>
-    <a routerLink="/article">Article</a>
-    <router-outlet></router-outlet>
-  </nav>
+  </div>
+</nav>
 
- 
- 
+<!-- Router content should be OUTSIDE nav -->
+<router-outlet></router-outlet>

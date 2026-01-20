@@ -1,4 +1,4 @@
- /* Reset */
+ /* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,104 +6,138 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 18px 60px;
+  align-items: center;
+  padding: 15px 40px;
   background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-/* Doctor Name */
 header h1 {
   font-size: 24px;
-  color: #00bfa6;
-  font-weight: bold;
+  font-weight: 700;
+  color: #637b6a;
 }
 
-/* Social Icons */
+/* Social icons container */
 .social-icons {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
+/* Icons */
 .social-icons i {
-  font-size: 16px;
+  font-size: 22px;
   color: #555;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect */
 .social-icons i:hover {
-  color: #00bfa6;
+  color: #1e88e5;
+  transform: scale(1.2);
 }
 
-/* Right Actions */
-.nav-actions {
-  display: flex;
-  align-items: center;
-}
-
-/* Menu Button */
-.menu-btn {
-  display: flex;
-  align-items: left;
-  gap: 6px;
-  padding: 8px 16px;
-  background: transparent;
-  border: 1px solid #00bfa6;
-  color: #00bfa6;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-/* Primary Button */
-.primary-btn {
-  margin-left: 12px;
-  padding: 8px 18px;
-  background-color: #00bfa6;
-  color: #ffffff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 nav {
   display: flex;
-  gap: 22px;
-  padding: 16px 60px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
   background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
 }
 
-/* Nav Links */
+/* NAV LINKS */
 nav a {
   text-decoration: none;
   color: #333;
+  margin-right: 20px;
   font-size: 15px;
   font-weight: 500;
   position: relative;
-  padding-bottom: 4px;
 }
 
-/* Hover */
 nav a:hover {
-  color: #00bfa6;
+  color: #007bff;
 }
 
-/* Active Route (Optional) */
 nav a.active {
-  color: #00bfa6;
-  border-bottom: 2px solid #00bfa6;
+  color: #007bff;
+  font-weight: 600;
 }
 
-/* Router Content */
+/* RIGHT ACTIONS */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* MENU BUTTON */
+.menu-btn {
+  background: #719888;
+  border: 1px solid hsl(195, 40%, 98%);
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.menu-btn i {
+  margin-left: 6px;
+}
+
+.menu-btn:hover {
+  background-color: #8a98bb;
+}
+
+/* PRIMARY BUTTON */
+.primary-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+/* ROUTER CONTENT */
 router-outlet {
   display: block;
-  margin-top: 30px;
+  padding: 30px 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
 }

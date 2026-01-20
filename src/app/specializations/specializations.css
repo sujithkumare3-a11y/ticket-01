@@ -1,0 +1,52 @@
+/* Specialisation Section */
+.specialisation {
+  padding: 60px 80px;
+  background-color: #f4f6f8;
+  text-align: center;
+}
+
+.specialisation h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #1e88e5;
+}
+
+/* Grid container */
+.specialisation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Individual card */
+.special-card {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.special-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.special-card h3 {
+  font-size: 20px;
+  color: #1e88e5;
+  margin-bottom: 10px;
+}
+
+.special-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .specialisation {
+    padding: 40px 20px;
+  }
+}
