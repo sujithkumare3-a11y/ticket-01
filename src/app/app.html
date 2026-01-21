@@ -2,10 +2,13 @@
   <h1>DR. LYNDA ADHAYA</h1>
 
  <div class="social-icons">
-  <i class="fa-brands fa-facebook"></i>
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-twitter"></i>
-  <i class="fa-brands fa-linkedin"></i>
+  <a href="https://www.facebook.com/suji.941805/"><i class="fab fa-facebook"></i>
+  </a>
+  <a href='https://www.instagram.com/sk_mass_king07/'><i class="fab fa-instagram"></i>
+  </a>
+  <i class="fab fa-twitter"></i>
+  <a href='https://www.linkedin.com/in/sujithkumare7'><i class="fab fa-linkedin-in"  ></i>
+  </a>
 </div>
 
 </header>
@@ -18,15 +21,23 @@
   <a routerLink="/gallery">Gallery</a>
   <a routerLink="/article">Article</a>
 
-  <div class="nav-actions">
-    <button class="menu-btn">
-      All Menu <i class="fa-solid fa-bars"></i>
-    </button>
+ <div class="nav-actions">
+  <button class="menu-btn" onclick="toggleMenu()">
+    All Menu <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- <div id="menu" class="menu">
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('gallery')">Gallery</a>
+  </div> -->
+</div>
+
+       
 
     <button class="primary-btn" (click)="bookAppointment()">
       Book Appointment
     </button>
-  </div>
+  
 </nav>
 
 <!-- Router content should be OUTSIDE nav -->
