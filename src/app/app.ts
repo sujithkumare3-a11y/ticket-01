@@ -9,6 +9,13 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
+closeMenu() {
+throw new Error('Method not implemented.');
+}
+isMenuOpen: any;
+toggleMenu() {
+throw new Error('Method not implemented.');
+}
 openlinkedIn: any;
 openlinkedin() {
 throw new Error('Method not implemented.');
@@ -47,6 +54,24 @@ function closeDropdown() {
 }
 
 function openlinkdin(): void {
+  throw new Error('Function not implemented.');
+}
+
+export class NavbarComponent {
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
+}
+ 
+
+
+function toggleMenu() {
   throw new Error('Function not implemented.');
 }
 

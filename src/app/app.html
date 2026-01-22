@@ -21,16 +21,23 @@
   <a routerLink="/gallery">Gallery</a>
   <a routerLink="/article">Article</a>
 
- <div class="nav-actions">
-  <button class="menu-btn" onclick="toggleMenu()">
+<div class="nav-actions">
+   <button class="menu-btn" (click)="toggleMenu()">
     All Menu <i class="fas fa-bars"></i>
-  </button>
+  </button> 
+   
+
+  
+
+</div>
+
+
 
   <!-- <div id="menu" class="menu">
     <a href="#" onclick="showSection('about')">About</a>
     <a href="#" onclick="showSection('gallery')">Gallery</a>
   </div> -->
-</div>
+<!-- </div> -->
 
        
 
@@ -40,5 +47,57 @@
   
 </nav>
 
+
+
 <!-- Router content should be OUTSIDE nav -->
 <router-outlet></router-outlet>
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- About -->
+    <div class="footer-box">
+      <h3>About Us</h3>
+      <p>
+        We build modern, responsive websites using the latest web technologies.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+       <li><a routerLink="/about" >About</a></li>
+       <li><a routerLink="/specializations">Specializations</a></li>
+       <li><a routerLink="/education">Education</a></li>
+       <li><a routerLink="/experience">Experience</a></li>
+       <li><a routerLink="/gallery">Gallery</a></li>
+       <li><a routerLink="/article">Article</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+      <p><i class="fas fa-envelope"></i> info@example.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 All Rights Reserved | Designed by Sujith</p>
+  </div>
+</footer>
+
